@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Estonia&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+body{
+    background: #02313F;
+    color: #fff;
+    font-family: "Poppins";
+}
+
+
+.name{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 2px;
+    background: #7E961F;
+}
+
+.name h1{
+    color: #0A1E66;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: "Enriqueta";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 41.667% */
+}
+
+.message{
+    margin: 0cm 0 0.5cm;
+    text-align: center;
+    color: #FFF;
+    font-family: "Inknut Antiqua";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+
+}
+
+
+
+.images{
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+}
+
+.computer img , .player img{
+    width: 65%;
+}
+.shakeComputer{
+    animation: shakeComputer 2.0s linear;
+}
+.shakePlayer{
+    animation: shakePlayer 2.2s linear;
+}
+
+.score{
+    color: #F8EBEB;
+    text-align: center;
+    font-family: "Inknut Antiqua";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 166.667% */
+}
+
+.points{
+    margin: 1cm 0;
+
+    text-align: center;
+    font-family: "Inknut Antiqua";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.computerPoints{
+    margin-left: 4cm;
+}
+.playerPoints{
+    margin-right: 5.2cm;
+}
+
+.result{
+    color: #7E961F;
+    text-align: center;
+    font-family: "kalam";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 83.333% */
+}
+
+.options{
+    margin-top: 1cm;
+    margin-bottom: 0cm;
+    
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.options button{
+    /*background: none;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: medium;
+    border: 1px solid #fff;
+    padding: 1cm 1cm;
+    border-radius: 7px;
+    width: 150px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;*/
+    border-radius: 10px;
+    background: #7E961F;
+    
+    display: flex;
+    width: 200px;
+    height: 60px;
+    padding: 30px 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #202060;
+    text-align: center;
+    font-family: "SF Pro Rounded";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+}
+
+.options button:hover{
+    border-radius: 10px;
+    background: #155C60;
+    color: #F9F0F2;
+    box-shadow: 5px 5px 10px 0px rgba(170, 170, 204, 0.50);
+    border: 1px solid darkcyan;
+}
+
+.restart{
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.restart button{
+    /*background: none;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: medium;
+    border: 1px solid #fff;
+    padding: 1cm 1cm;
+    border-radius: 7px;
+    width: 150px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;*/
+    border-radius: 10px;
+    background: #7E961F;
+    
+    display: flex;
+    width: 250px;
+    height: 60px;
+    padding: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #202060;
+    text-align: center;
+    font-family: "Estonia";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 111.111% */
+}
+
+.restart button:hover{
+    border-radius: 10px;
+    background: #155C60;
+    color: #F9F0F2;
+    box-shadow: 5px 5px 10px 0px rgba(170, 170, 204, 0.50);
+    border: 1px solid darkcyan;
+}
+
+
+
+@keyframes shakeComputer{
+    0%{
+        transform: rotate(-30dg);
+    }
+    25%{
+        transform: rotate(30dg);
+    }
+    50%{
+        transform: rotate(-30dg);
+    }
+    75%{
+        transform: rotate(30dg);
+    }
+    100%{
+        transform: rotate(0dg);
+    }
+}
+@keyframes shakePlayer{
+    0%{
+        transform: rotate(30dg);
+    }
+    25%{
+        transform: rotate(-30dg);
+    }
+    50%{
+        transform: rotate(30dg);
+    }
+    75%{
+        transform: rotate(-30dg);
+    }
+    100%{
+        transform: rotate(0dg);
+    }
+}
